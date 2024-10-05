@@ -20,8 +20,8 @@ def ite_fib(n):
         return 1
     a = 0
     b = 1
-    for i in range(2, n+1):
-        tiempo = i
+    for _ in range(2, n+1):
+        tiempo += 1
         c = a + b
         a = b
         b = c
