@@ -43,6 +43,14 @@ def recorrer_iter(lista):
     for i in range(len(lista)):
         print(lista[i])
 
+def sumar_lista_doble(lista):
+    suma = 0
+    nueva_lista = dup_lista(lista)
+    for i in range(len(nueva_lista)):
+        suma += nueva_lista[i]
+
+    return suma
+
 tiempo = 0
 print("Fibonacci recursivo de 40: ", rec_fib(40))
 print("Tiempo: ", tiempo)
