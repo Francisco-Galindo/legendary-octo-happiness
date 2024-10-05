@@ -2,4 +2,5 @@
 
 print("Hola Mundo")
 
-print("Easter egg")
+def easter_egg():
+  print("Halo!")
