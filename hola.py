@@ -53,12 +53,12 @@ def sumar_lista_doble(lista):
 
 def insertion_sort(lista):
     for i in range(1, len(lista)):
-        k = lista[i]
+        key = lista[i]
         j = i - 1
-        while j >= 0 and lista[j] > k:
+        while j >= 0 and lista[j] > key:
             lista[j+1] = lista[j]
             j -= 1 
-        lista[j+1] = k
+        lista[j+1] = key
 
     return lista
 
