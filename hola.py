@@ -27,6 +27,13 @@ def ite_fib(n):
         b = c
     return b
 
+def dup_lista(lista):
+    nueva_lista = []
+    for i in range(len(lista)):
+        nueva_lista.append(lista[i] * 2)
+
+    return nueva_lista
+
 def recorrer_rec(lista):
     if len(lista) > 0:
         print(lista[0])
