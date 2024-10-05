@@ -51,6 +51,18 @@ def sumar_lista_doble(lista):
 
     return suma
 
+def insertion_sort(lista):
+    for i in range(1, len(lista)):
+        k = lista[i]
+        j = i - 1
+        while j >= 0 and lista[j] > k:
+            lista[j+1] = lista[j]
+            j -= 1 
+        lista[j+1] = k
+
+    return lista
+
+
 tiempo = 0
 print("Fibonacci recursivo de 40: ", rec_fib(40))
 print("Tiempo: ", tiempo)
