@@ -32,6 +32,10 @@ def recorrer_rec(lista):
         print(lista[0])
         recorrer_rec(lista[1:])
 
+def recorrer_iter(lista):
+    for i in range(len(lista)):
+        print(lista[i])
+
 tiempo = 0
 print("Fibonacci recursivo de 40: ", rec_fib(40))
 print("Tiempo: ", tiempo)
@@ -41,3 +45,4 @@ print("Fibonacci iterativo de 40: ", ite_fib(40))
 print("Tiempo: ", tiempo)
 
 recorrer_rec([1,2,3,4])
+recorrer_iter([1,2,3,4])
